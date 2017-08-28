@@ -31,7 +31,7 @@ function renderButtons() {
 // displaying the gifs and ratings
 function displayGif() {
 	var artist = $(this).attr("data-name");
-	var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + artist + "&api_key=9afb8f5d4c4b492c9afe06afb0904326&limit=10";
+	var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + artist + "&api_key=9afb8f5d4c4b492c9afe06afb0904326&limit=10";
 
 	// ajax calling
 	$.ajax({
