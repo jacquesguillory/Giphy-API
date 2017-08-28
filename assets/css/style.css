@@ -1,0 +1,31 @@
+body{
+	background: #4A628B;
+}
+
+h1, h2 {
+	margin:20px;
+	color: #F79D3D;
+}
+
+label, span{
+	color: #F79D3D;
+}
+
+button {
+	margin: 5px;
+}
+
+span {
+	text-align: center;
+}
+
+.frozen, .running {
+	
+	display: inline-block;
+	float: left;
+	margin: 5px;
+    
+}
+
+
+
