@@ -49,7 +49,7 @@ function displayGif() {
 
 
 			$("#artists").prepend("<div id='"+i+"' class='frozen' > <img src='" + response.data[i].images.fixed_height_still.url + "'><br>" 
-				+ "<span> Rating: " + response.data[i].rating + "</span></div><br>");
+				+ "<span> Rating: " + response.data[i].rating + "</span></div>");
 
 		}
 
