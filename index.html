@@ -11,56 +11,56 @@
 	
 	<!-- jQuery -->
 	<script
-  	src="https://code.jquery.com/jquery-3.2.1.min.js"
-  	integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-  	crossorigin="anonymous"></script>
- 	<!-- my JS -->
+	src="https://code.jquery.com/jquery-3.2.1.min.js"
+	integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+	crossorigin="anonymous"></script>
+	<!-- my JS -->
 	<script src="assets/javascript/logic.js"></script>
 
 
 </head>
 <body>
 
-<div class="container">
-	<h1>Where's my Giphy?</h1>
-	<h2>a collection of music artist gifs</h2>
-	<br>
-	
+	<div class="container">
+		<h1>Where's my Giphy?</h1>
+		<h2>a collection of music artist gifs</h2>
+		<br>
+		
 
 
-	<!-- buttons go here -->
-	<div class="row">
-		<div class="col-lg-8">
-			<div id="buttons">
+		<!-- buttons go here -->
+		<div class="row">
+			<div class="col-lg-8">
+				<div id="buttons">
+				</div>
 			</div>
+
+
+			<br>
+
+			<div class="col-lg-4">
+				<!-- add button form here -->
+				<form id="form">
+					<label for="input">Add a music artist: </label>
+					<input type="text" id="input"><br><br>
+
+
+					<input id="add-artist" type="submit" value="Add" class="btn btn-success">
+				</form>
+			</div>
+			
 		</div>
-
-
 		<br>
 
-		<div class="col-lg-4">
-		<!-- add button form here -->
-			<form id="form">
-				<label for="input">Add a music artist: </label>
-				<input type="text" id="input"><br><br>
 
-
-				<input id="add-artist" type="submit" value="Add" class="btn btn-success">
-			</form>
-		</div>
-	
-	</div>
-	<br>
-
-
-	<!-- gifs (with a hard G) go here -->
-	<div class="row">
-		<div class="col-lg-12">
-			<div id="artists">
+		<!-- gifs (with a hard G) go here -->
+		<div class="row">
+			<div class="col-lg-12">
+				<div id="artists">
+				</div>
 			</div>
 		</div>
 	</div>
-</div>
 
 </body>
 </html>

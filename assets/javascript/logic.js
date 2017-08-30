@@ -1,9 +1,9 @@
 $(document).ready(function(){
 
-var artists = ["Modest Mouse", "Animal Collective", "Flying Lotus", "Grizzly Bear", 
-"Nujabes", "Aphex Twin", "Squarepusher", "Clipse", "The Strokes", "Lil B", "Gorillaz",  
-"Local Natives", "Mac Demarco", "A Tribe Called Quest", "Black Star",
-"Common", "Death Grips", "Kanye West", "Panda Bear", "Danny Brown", "suh du", "Radiohead"];
+	var artists = ["Modest Mouse", "Animal Collective", "Flying Lotus", "Grizzly Bear", 
+	"Nujabes", "Aphex Twin", "Squarepusher", "Clipse", "The Strokes", "Lil B", "Gorillaz",  
+	"Local Natives", "Mac Demarco", "A Tribe Called Quest", "Black Star",
+	"Common", "Death Grips", "Kanye West", "Panda Bear", "Danny Brown", "suh du", "Radiohead"];
 
 
 //  function for displaying the buttons
@@ -39,12 +39,12 @@ function displayGif() {
 		method: "GET"
 
 	// displaying the new gifs after clicking button
-	}).done(function(response){
-		$("#artists").html("");
-		console.log(response);
-		holder = response;
-		
-		// looping through 10 responses
+}).done(function(response){
+	$("#artists").html("");
+	console.log(response);
+	holder = response;
+	
+		// looping through responses limited by url query
 		for (i = 0; i < response.data.length; i++){
 
 
@@ -53,7 +53,7 @@ function displayGif() {
 
 		}
 
-
+		// if a frozen or running class are clicked
 		$(".frozen" || ".running").on("click", function(){
 			
 			// checking what class the image has
@@ -61,22 +61,22 @@ function displayGif() {
 			console.log(classCheck);
 
 
-			// if div is in the frozen class
+			// if div is in the frozen class replace src with running gif
 			if(classCheck === 'frozen'){
-			var idCheck = $(this).attr('id');
-			console.log(idCheck);
-			$("img", this).attr("src", holder.data[idCheck].images.fixed_height.url);
-			$(this).attr("class", "running")
-			console.log(this);
+				var idCheck = $(this).attr('id');
+				console.log(idCheck);
+				$("img", this).attr("src", holder.data[idCheck].images.fixed_height.url);
+				$(this).attr("class", "running")
+				console.log(this);
 			}
 
-			// if div is in the running class
+			// if div is in the running class replace src with frozen gif
 			else if(classCheck === 'running'){
-			var idCheck = $(this).attr('id');
-			console.log(idCheck);
-			$("img", this).attr("src", holder.data[idCheck].images.fixed_height_still.url);
-			$(this).attr("class", "frozen")
-			console.log(this);
+				var idCheck = $(this).attr('id');
+				console.log(idCheck);
+				$("img", this).attr("src", holder.data[idCheck].images.fixed_height_still.url);
+				$(this).attr("class", "frozen")
+				console.log(this);
 			}
 
 			
