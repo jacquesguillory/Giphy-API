@@ -39,7 +39,7 @@ function displayGif() {
 		method: "GET"
 
 	// displaying the new gifs after clicking button
-}).done(function(response){
+	}).done(function(response){
 	$("#artists").html("");
 	console.log(response);
 	holder = response;
