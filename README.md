@@ -8,5 +8,6 @@ Technologies Used:
 * Bootstrap
 * JQuery
 * Giphy API
+* AJAX
 
 Link to deployed app [here](https://jacquesguillory.github.io/Giphy-API/).
